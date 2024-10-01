@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("../images/img1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 80vh;
+    position: relative;
+
+    
+}
+.main .box{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    opacity: .65;
+    background-color: rgba(0, 0, 0);
+}
+nav{
+    width:70vw;
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    position: relative;
+    
+}
+nav h3{
+    color: red;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-size: 35px;
+    position: relative;
+    
+}
+.btn{
+    padding: 3px 8px;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+    background:transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+select{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.red:hover{
+    background-color: rgb(177, 42, 42);
+}
+.text{
+    color: white;
+    font-family: "Poppins", system-ui;
+    height: calc(100% - 50px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 23px;
+}
+.text h1{
+    text-align: center;
+    
+}
+.text h5{
+    text-align: center;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+}
+.text p{
+    text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(51, 49, 49);
+}
+.button input{
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 300px;
+    background-color: rgb(61, 60, 60,.4);
+    text-align: left;
+    border:1px solid rgb(240, 236, 236, .2);
+    border-radius: 5px;
+    color: rgb(255, 255, 255, 1);
+    font-family: "Poppins", system-ui;
+    font-weight: 200;
+
+}
+.button >button{
+    background-color: red;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    padding: 5px 8px;
+    margin: 5px;
+    font-size: 18px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+
+}
+.button >button:hover{
+    background-color: rgb(177, 42, 42);
+}
+.first{
+    display: flex;
+    height: 60vh;
+    margin: 10px;
+}
+.first-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", system-ui;
+    justify-content: center;
+    padding: 10px 20px 10px 70px;
+
+}
+.first-text h1{
+    font-size: 35px;
+    font-family: "Poppins", system-ui;
+}
+.first-text p{
+    font-size: 16px;
+    font-family: "Poppins", system-ui;
+}
+.first-display{
+    position: relative;
+
+}
+.first-display img{
+    /* position: relative; */
+    top: 5px;
+    width: 500px;
+    
+}
+.first-display video{
+    position: absolute;
+    top: 75px;
+    width: 370px;
+    left: 59px;
+    z-index: -1;
+}
+.secondvid video{
+    width: 311px;
+    top: 25px;
+    left: 87px;
+}
+.faq{
+    font-family: "Poppins", system-ui;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.faq h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 5px;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    background-color: rgb(56, 48, 48);
+    padding: 10px 10px;
+    margin: 10px 5px;
+}
+.faqbox p{
+    padding: 10px;
+}
+.faqbox span{
+    padding: 10px;
+}
+.faqbox:hover{
+    background-color: rgb(41, 37, 37);
+    /* transition: all 1s ease-out; */
+}
+footer{
+    font-family: "Poppins", system-ui;
+    height: 30vh;
+    padding: 50px;
+
+}
+.questions a{
+    color: white;
+    padding: 5px;
+    position: relative;
+    left: 203px;
+    font-size: 13px;
+}
+.footer{
+    padding: 5px 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* gap: 13px; */
+    
+}
+.footer-item{
+    display: grid;
+    grid-template-columns: auto;
+    /* justify-content: center; */
+
+
+}
+.footer-item a{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        /* background-color: skyblue; */
+    }   
+    .main{
+        height: 555px;
+    }
+    .main .box{
+        height: 555px;
+    }
+    nav{
+        width: 90vw;
+        margin: 0px;
+        padding: 15px;
+    }
+    .text{
+        height: 70vw;
+        margin: 20px 0;
+    }
+    .text h1{
+        font-size: 28px;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .button input{
+        margin: 10px 5px;
+    }
+    .first{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .first h1{
+        font-size: 30px;
+
+    }
+    .first-display img{
+        width: 400px;
+    }
+    .first-display video{
+        top: 63px;
+        width: 288px;
+    }
+    .second{
+        margin: 15px 0px;
+    }
+    .second .first-display{
+        margin: 10px 5px;
+    }
+    .second .first-text{
+        margin: 10px 5px;
+    }
+    .third video{
+        width: 225px;
+        top: 35px;
+    }
+    .faq h1{
+        font-size: 28px;
+    }
+    .faqbox p{
+        font-size: 14px;
+    }
+    .questions a{
+        left: 20px;
+        font-size: 15px;
+    }
+    .footer{
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+    .footer a{
+        font-size: 14px;
+    }
+}
