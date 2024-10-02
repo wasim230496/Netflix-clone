@@ -12,7 +12,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px,100vw);
-    height: 80vh;
+    height: 70vh;
     position: relative;
 
     
@@ -91,16 +91,18 @@ select{
 }
 .text p{
     text-align: center;
+    font-size: 16px;
 }
 .separation{
     height: 7px;
+
     background-color: rgb(51, 49, 49);
 }
 .button input{
     padding: 5px 10px;
     font-size: 16px;
     width: 300px;
-    background-color: rgb(61, 60, 60,.4);
+    background-color: rgb(61, 60, 60,.6);
     text-align: left;
     border:1px solid rgb(240, 236, 236, .2);
     border-radius: 5px;
@@ -235,28 +237,26 @@ footer{
     color: white;
     font-size: 10px;
 }
-
-@media screen and (max-width: 800px) {
-    body{
-        /* background-color: skyblue; */
-    }   
-    .main{
-        height: 555px;
-    }
-    .main .box{
-        height: 555px;
-    }
+@media screen and (max-width:400.99px){
     nav{
-        width: 90vw;
-        margin: 0px;
-        padding: 15px;
+
+        width: 330px;
+        margin: auto;
+        padding: 15px 5px;
     }
     .text{
-        height: 70vw;
-        margin: 20px 0;
+        height: 90vw;
+        margin: 20px 0px;
+        padding: 5px 20px;
     }
     .text h1{
         font-size: 28px;
+    }
+    .text h5{
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 14;
     }
     .button{
         display: flex;
@@ -277,8 +277,113 @@ footer{
         padding: 10px;
     }
     .first h1{
-        font-size: 30px;
+        font-size: 28px;
 
+    }
+    .first-text{
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+    }
+    .first-display img{
+        width: 300px;
+    }
+    .first-display video{
+        top: 46px;
+        width: 218px;
+        left: 40px;
+    }
+    .second{
+        margin: 15px 0px;
+    }
+    .second .first-display{
+        margin: 10px 5px;
+    }
+    .second .first-text{
+        margin: 10px 5px;
+    }
+    .third img{
+        width: 350px;
+        
+    }
+    .third video{
+        width: 223px;
+        top: 22px;
+        left: 56px;
+    }
+    
+    .faq h1{
+        font-size: 28px;
+    }
+    .faqbox p{
+        font-size: 14px;
+    }
+    .questions a{
+        left: 20px;
+        font-size: 15px;
+    }
+    .footer{
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+    .footer a{
+        font-size: 14px;
+    }
+}
+@media (min-width:401px) and (max-width: 900px) {
+   
+    .main{
+        height: 555px;
+    }
+    .main .box{
+        height: 555px;
+    }
+    nav{
+
+        width: 80vw;
+        margin: auto;
+        padding: 15px 30px;
+    }
+    .text{
+        height: 70vw;
+        margin: 20px 0px;
+        padding: 5px 30px;
+    }
+    .text h1{
+        font-size: 28px;
+    }
+    .text h5{
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 14;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .button input{
+        margin: 10px 5px;
+    }
+    .first{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .first h1{
+        font-size: 28px;
+
+    }
+    .first-text{
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
     }
     .first-display img{
         width: 400px;
